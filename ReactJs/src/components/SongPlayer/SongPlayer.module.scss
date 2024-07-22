@@ -1,0 +1,212 @@
+.SongPlayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 90px;
+  background-color: #130c1c;
+  display: flex;
+  z-index: 100;
+  transition: transform 1s linear;
+  transform: translateY(0%);
+  @media screen and (max-width: 768px) {
+    width: 760px;
+  }
+  .musicPopup {
+    position: absolute;
+    top: -299px;
+    left: 410px;
+    width: 268px;
+    height: 335px;
+  }
+  .left {
+    padding-left: 22px;
+    padding-top: 15px;
+    display: flex;
+    width: 400px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      width: 250px;
+    }
+    .love {
+      position: absolute;
+      top: 36px;
+      right: 40px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      padding: 7px;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.3);
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        -webkit-filter: invert(100%);
+      }
+    }
+
+    .more {
+      position: absolute;
+      top: 38px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.3);
+      }
+      .icon {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        -webkit-filter: invert(100%);
+      }
+    }
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 10px;
+    }
+    .detal {
+      margin-top: 0px;
+      margin-left: 10px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      .title {
+        width: 270px;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+          width: 100px;
+        }
+        h4 {
+          font-weight: 500;
+          font-size: 15px;
+          white-space: nowrap;
+        }
+      }
+      p {
+        margin-top: 3px;
+        font-size: 13px;
+        color: #6a6670;
+        font-weight: 600;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 22px;
+    padding-top: 15px;
+    color: #fff;
+    height: 90px;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      gap: 15px;
+    }
+    .mvIcon,
+    .micIcon,
+    .volumeIcon,
+    .playlist {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 50%;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        padding: 2px;
+        h4 {
+          font-size: 9px;
+        }
+      }
+    }
+
+    .micIcon,
+    .volumeIcon,
+    .playlist {
+      .icon {
+        border: none;
+      }
+    }
+    .scroll {
+      margin-left: -20px;
+      margin-top: -2px;
+      width: 50px;
+      height: 2px;
+      border: 2px solid #fff;
+    }
+    .mvIcon {
+      width: 36px;
+      height: 36px;
+      padding: 8px;
+      &:hover {
+        // cursor: auto;
+        // background-color: transparent;
+      }
+      .icon {
+      }
+    }
+  }
+
+  .middle {
+    display: flex;
+    width: 700px;
+    margin-left: 20px;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      width: 350px;
+    }
+    .random {
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      width: 25px;
+      height: 25px;
+      -webkit-filter: invert(100%);
+      cursor: pointer;
+    }
+  }
+}
+
+.scroll {
+  animation: ScrollText 8s linear infinite;
+}
+
+@keyframes ScrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.active {
+  // -webkit-filter: invert(0%);
+  filter: hue-rotate(270deg) !important;
+  color: #bd1919 !important;
+}

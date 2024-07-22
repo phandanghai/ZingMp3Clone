@@ -1,0 +1,18 @@
+.PlayListPages {
+    // width: calc(100vw - 237px);
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 240px;
+    background-color: #170f23;
+    padding: 0 60px;
+    overflow: auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1024px) {
+        // width: calc(100vw - 70px);
+        left: 70px;
+        flex-direction: column;
+    }
+}

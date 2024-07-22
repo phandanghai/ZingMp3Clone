@@ -1,0 +1,169 @@
+.Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: #231b2e;
+    padding: 13px 28px;
+    color: #d3d2d3;
+    @media screen and (max-width: 1024px) {
+        width: 70px;
+    }
+    .logo {
+        width: 120px;
+        height: 40px;
+        background: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg')
+            50% / contain no-repeat;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    .logoMobile {
+        display: none;
+        width: 45px;
+        height: 45px;
+        margin-top: -3px;
+        margin-left: -15px;
+        background: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.111/static/media/icon_zing_mp3_60.f6b51045.svg')
+            50% / contain no-repeat;
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    .list-menu {
+        width: 237px;
+        margin-top: 17px;
+        margin-left: -28px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-bottom: 20px;
+        border-bottom: 1px solid hsl(0, 0%, 52%);
+        @media screen and (max-width: 1024px) {
+            margin-top: 15px;
+            margin-left: -29.5px;
+            width: 70px;
+        }
+        .item {
+            width: 100%;
+            height: 48px;
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+            border-left: 3px solid transparent;
+            text-decoration: none;
+            color: #ffffff80;
+
+            &:hover {
+                cursor: pointer;
+            }
+            img {
+                margin-left: 21px;
+                color: #88848e;
+                width: 24px;
+                height: 24px;
+            }
+            h4 {
+                margin-left: 11px;
+                font-size: 15px;
+                font-weight: 550;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .list-cate {
+        border: none;
+        overflow-y: auto;
+        height: 253px;
+        width: 237px;
+        margin-top: 24px;
+        margin-left: -28px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-bottom: 20px;
+        // border-bottom: 1px solid hsl(0, 0%, 70%);
+        @media screen and (max-width: 1024px) {
+            margin-top: 15px;
+            margin-left: -29.5px;
+            width: 70px;
+        }
+        div {
+            .item {
+                width: 100%;
+                height: 48px;
+                display: flex;
+                flex-direction: row;
+                padding: 10px 0;
+                border-left: 3px solid transparent;
+                text-decoration: none;
+                color: #ffffff80;
+
+                &:hover {
+                    cursor: pointer;
+                }
+                img {
+                    margin-left: 21px;
+                    color: #88848e;
+                    width: 24px;
+                    height: 24px;
+                }
+                h4 {
+                    margin-left: 11px;
+                    font-size: 15px;
+                    font-weight: 550;
+                    @media screen and (max-width: 1024px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .create-playlist {
+        display: flex;
+        position: absolute;
+        bottom: -9px;
+        left: 0;
+        width: 237px;
+        border-top: 1px solid #393243;
+        height: 62px;
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 70px;
+        }
+        img {
+            margin-top: 13.5px;
+            margin-left: 27.5px;
+            color: #88848e;
+            width: 25px;
+            height: 25px;
+        }
+        h4 {
+            margin-left: 11px;
+            margin-top: 15px;
+            font-size: 15px;
+            font-weight: 550;
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.active {
+    border-left: 3px solid #9b4de0;
+    background-color: #3a3344;
+}
+
+.none {
+    display: none;
+}

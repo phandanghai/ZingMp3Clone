@@ -1,0 +1,19 @@
+.TopicPage {
+    width: calc(100vw - 237px);
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 240px;
+    background-color: #170f23;
+    color: white;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    @media screen and (max-width: 1024px) {
+        width: calc(100vw - 70px);
+        left: 70px;
+    }
+    @media screen and (max-width: 786px) {
+        // padding: 0 30px;
+    }
+}

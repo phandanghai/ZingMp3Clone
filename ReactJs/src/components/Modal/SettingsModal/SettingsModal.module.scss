@@ -1,0 +1,46 @@
+.SettingsModal {
+    position: fixed;
+    top: 66px;
+    right: 76px;
+    height: 370px;
+    width: 300px;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #34224f;
+    color: #fff;
+    .before::before {
+        content: '';
+        position: absolute;
+        display: block;
+        z-index: 999;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: -50px;
+        left: 220px;
+        cursor: pointer;
+    }
+    .item {
+        width: 100%;
+        height: 44px;
+        padding: 12px 10px;
+        display: flex;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.1);
+        }
+        .icon,
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        h4 {
+            margin-left: 14px;
+            font-weight: 500;
+            font-size: 15px;
+            color: #d7d7d8;
+        }
+    }
+}

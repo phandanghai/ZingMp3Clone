@@ -1,0 +1,38 @@
+.Single {
+    width: 100%;
+    background-color: #170f23;
+    padding: 12px 58px;
+    .header {
+        h2 {
+            font-size: 21px;
+            color: #fff;
+        }
+    }
+
+    .listSingle {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 180px;
+                height: 180px;
+                border-radius: 10px;
+            }
+            h3 {
+                margin-top: 12px;
+                font-size: 14px;
+                color: #fff;
+            }
+            p {
+                margin-top: 1px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #735e80;
+            }
+        }
+    }
+}

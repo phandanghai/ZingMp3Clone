@@ -1,0 +1,143 @@
+.Musics {
+    width: 100%;
+    background-color: #170f23;
+    padding: 25px 58px;
+    .header {
+        width: 100%;
+        display: flex;
+        h2 {
+            font-size: 21px;
+            line-height: 15px;
+            color: #fff;
+        }
+
+        .playIcon {
+            margin-left: 10px;
+            margin-top: -10px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            padding: 8px;
+            padding-left: 10px;
+            background-color: #9b4de0;
+            .icon {
+                width: 14px;
+                height: 14px;
+                -webkit-filter: invert(100%);
+            }
+        }
+    }
+
+    .listMusics {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        .item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: space-between;
+            margin-bottom: 10px;
+            color: #fff;
+            position: relative;
+            height: 60px;
+            border-bottom: 1px solid #221b2e;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            &:hover .option {
+                display: flex;
+            }
+            &:hover .time {
+                display: none;
+            }
+            .option {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding-left: 330px;
+                padding-top: 20px;
+                gap: 30px;
+                .play {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-right: 100px;
+                    -webkit-filter: invert(100%);
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        -webkit-filter: invert(100%);
+                    }
+                }
+                .list {
+                    position: absolute;
+                    right: 20px;
+                    display: flex;
+                    gap: 30px;
+                    .mic,
+                    .like,
+                    .more {
+                        width: 26px;
+                        height: 26px;
+                        border-radius: 50%;
+                        padding: 3px;
+                        padding-left: 5px;
+                        &:hover {
+                            cursor: pointer;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+            }
+            img {
+                margin-left: 11px;
+                width: 40px;
+                height: 40px;
+                border-radius: 3px;
+            }
+            .descript {
+                position: absolute;
+                left: 61px;
+                top: -3px;
+                h4 {
+                    margin-top: 12px;
+                    font-size: 14px;
+                }
+                p {
+                    margin-top: 1px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #797580;
+                }
+            }
+
+            .title {
+                position: absolute;
+                left: 515px;
+                top: 20px;
+                font-size: 13px;
+                font-weight: 600;
+                color: #797580;
+            }
+            .time {
+                position: absolute;
+                right: 18px;
+                top: 20px;
+                font-size: 13px;
+                font-weight: 600;
+                color: #797580;
+            }
+        }
+    }
+}

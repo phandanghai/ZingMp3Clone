@@ -1,0 +1,213 @@
+.MusicPopup {
+  position: absolute;
+  z-index: 99999;
+  width: 280px;
+  // height: 368px;
+  border-radius: 10px;
+  background-color: #34224f;
+  .before {
+    position: relative;
+    .icon {
+      position: absolute;
+      top: 100px;
+      right: -35px;
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+    &::before {
+      content: '';
+      display: block;
+      z-index: 999;
+      position: absolute;
+      border-radius: 50%;
+      // background-color: aquamarine;
+      top: 95px;
+      right: -40px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .bottom {
+    &::before {
+      content: '';
+      display: block;
+      z-index: 999;
+      position: absolute;
+      // background-color: rgba($color: #fff, $alpha: 0.3);
+      border-radius: 50%;
+      bottom: -32px;
+      left: -40px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .right {
+    &::before {
+      content: '';
+      display: block;
+      z-index: 999;
+      position: absolute;
+      // background-color: aqua;
+      border-radius: 50%;
+      top: 105px;
+      left: -37px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+  .header {
+    padding: 15px 15px 15px 0;
+    display: flex;
+    position: relative;
+    width: 280px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+    .info {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      h4 {
+        position: absolute;
+        top: 10px;
+        left: 60px;
+        font-size: 14px;
+        width: max-content;
+        color: #fff;
+      }
+      .like {
+        position: absolute;
+        top: 28px;
+        left: 60px;
+        font-size: 14px;
+        width: max-content;
+        display: flex;
+        gap: 5px;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #b6b3b3;
+          width: max-content;
+        }
+        .icon {
+          margin-top: 3px;
+        }
+      }
+
+      .listen {
+        position: absolute;
+        top: 28px;
+        left: 120px;
+        font-size: 14px;
+        width: max-content;
+        display: flex;
+        gap: 5px;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #b6b3b3;
+          width: max-content;
+        }
+        .icon {
+          margin-left: 5px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+
+  .middle {
+    position: absolute;
+    top: 50px;
+    margin: 15px 15px 10px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    display: flex;
+    z-index: 999;
+    .item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.25);
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+      }
+      h4 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+  }
+
+  .menus {
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 0 0;
+    .item {
+      display: flex;
+      flex-direction: row;
+      height: 35px;
+      width: 280px;
+      gap: 10px;
+      padding-left: 15px;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+      }
+      h4 {
+        font-size: 15px;
+        font-weight: 500;
+        color: #b6b3b3;
+        width: max-content;
+      }
+      .icon {
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+[datatype='html'] {
+  &:hover {
+    background-color: transparent !important;
+    cursor: not-allowed !important;
+  }
+}

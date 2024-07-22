@@ -1,0 +1,14 @@
+.MyPlayListPage {
+    position: fixed;
+    top: 70px;
+    left: 240px;
+    background-color: #170f23;
+    width: calc(100vw - 237px);
+    height: calc(100vh - 70px);
+    @media screen and (max-width: 1024px) {
+        top: 70px;
+        left: 70px;
+        width: calc(100vw - 70px);
+        height: calc(100vh - 70px);
+    }
+}

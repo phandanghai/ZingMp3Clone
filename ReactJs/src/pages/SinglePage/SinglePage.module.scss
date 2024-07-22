@@ -1,0 +1,10 @@
+.SinglePage {
+    position: relative;
+    top: 70px;
+    left: 240px;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 70px);
+    background-color: #170f23;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,611 @@
+.Home {
+  width: calc(100vw - 240px);
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 240px;
+  background-color: #170f23;
+  padding-left: 59px;
+  overflow: auto;
+  padding-bottom: 200px;
+  color: white;
+  z-index: 0;
+  overflow-x: hidden;
+  @media screen and (max-width: 1024px) {
+    left: 70px;
+    width: calc(100vw - 70px);
+    padding: 0 20px;
+  }
+  .galleries {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    @media screen and (max-width: 1024px) {
+      margin-left: 38px;
+      width: 866px;
+      gap: 30px;
+      margin-bottom: 100px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 610px;
+    }
+    img {
+      width: 316px;
+      height: 178px;
+      border-radius: 10px;
+      @media screen and (max-width: 1024px) {
+        width: 406px;
+        height: 228px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 300px;
+        height: 173px;
+      }
+    }
+  }
+
+  .recent {
+    margin-top: 50px;
+    margin-left: 15px;
+    h1 {
+      font-size: 20px;
+      color: white;
+    }
+
+    .listRecent {
+      margin-top: 23px;
+      display: flex;
+      gap: 28px;
+      .image {
+        width: 120px;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+        h4 {
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .beListen,
+  .remixMusic,
+  .chillMusic,
+  .moonMusic,
+  .Top100,
+  .AlbumHot,
+  .Radio {
+    margin-top: 40px;
+    @media screen and (max-width: 1024px) {
+      margin-left: 38px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 15px;
+    }
+    h1 {
+      font-size: 21px;
+      color: white;
+    }
+
+    .listBox {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      @media screen and (max-width: 768px) {
+        width: 600px;
+      }
+      .item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 250px;
+        @media screen and (max-width: 1024px) {
+          width: 191px;
+          height: 240px;
+          &:nth-child(n + 5) {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          width: 142px;
+          height: 191px;
+        }
+        &:hover .option {
+          display: flex;
+        }
+        &:hover .image img {
+          transform: scale(1.2);
+        }
+        .option {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 180px;
+          height: 180px;
+          display: none;
+          z-index: 1;
+          // background-color: rgba($color: #000000, $alpha: 0.4);
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          @media screen and (max-width: 1024px) {
+            width: 191px;
+            height: 191px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 142px;
+            height: 142px;
+            gap: 10px;
+          }
+          .link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 180px;
+            border: none;
+          }
+          .love,
+          .more,
+          .like {
+            display: block;
+            z-index: 999;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            -webkit-filter: invert(0%);
+          }
+          div {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid#fff;
+            padding: 4px;
+            padding-left: 6px;
+            cursor: pointer;
+            display: block;
+            z-index: 99;
+            .play {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+        .image {
+          width: 180px;
+          height: 180px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          overflow: hidden;
+          @media screen and (max-width: 1024px) {
+            width: 191px;
+            height: 191px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 142px;
+            height: 142px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            @media screen and (max-width: 1024px) {
+              width: 191px;
+              height: 191px;
+            }
+            @media screen and (max-width: 768px) {
+              width: 142px;
+              height: 142px;
+            }
+          }
+        }
+        h4 {
+          position: absolute;
+          font-size: 15px;
+          font-weight: 700;
+          @media screen and (max-width: 1024px) {
+            top: 200px;
+          }
+          @media screen and (max-width: 768px) {
+            top: 150px;
+            font-size: 13px;
+          }
+        }
+
+        .remixTitle {
+          margin-left: 0px !important;
+          width: 165px;
+          padding-top: 6px;
+          font-size: 15px;
+          font-weight: 500;
+          color: #837f8a;
+          @media screen and (max-width: 1024px) {
+            position: absolute;
+            top: 200px;
+          }
+
+          @media screen and (max-width: 768px) {
+            position: absolute;
+            top: 150px;
+            width: 142px;
+            margin-left: 0px;
+            font-size: 13px;
+          }
+        }
+
+        .artists {
+          position: absolute;
+          top: 210px;
+          left: 5px;
+          @media screen and (max-width: 1024px) {
+            position: absolute;
+            top: 223px;
+            font-size: 13px;
+          }
+          @media screen and (max-width: 768px) {
+            position: absolute;
+            top: 170px;
+            font-size: 13px;
+          }
+          .artist {
+            font-weight: 500;
+            color: #837f8a;
+
+            &:hover {
+              cursor: pointer;
+              color: #9b4de0;
+              text-decoration: underline;
+            }
+            span {
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Radio {
+    h4 {
+      margin-top: 10px;
+      margin-left: -50px;
+      text-align: center;
+    }
+    .listBox {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 1000px;
+      @media screen and (max-width: 1024px) {
+        width: 845px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 640px;
+      }
+      .item {
+        display: flex;
+        text-align: center;
+        &:nth-child(n + 6) {
+          display: none;
+        }
+        img {
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          @media screen and (max-width: 1024px) {
+            width: 142px;
+            height: 142px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        h4 {
+          position: absolute;
+          left: 55px;
+          font-size: 15px;
+          font-weight: 700;
+          top: 120px;
+          // display: flex;
+          // text-align: center;
+          @media screen and (max-width: 1024px) {
+            top: 150px;
+            font-size: 14px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 13px;
+            top: 100px;
+            left: 52px;
+          }
+        }
+      }
+    }
+  }
+
+  .newRelease {
+    margin-top: 45px;
+    @media screen and (max-width: 1024px) {
+      margin-left: 38px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 20px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+  .chooses {
+    margin-top: 23px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 400px;
+    button {
+      height: 25px;
+      padding: 0px 22px;
+      background-color: transparent;
+      border: 0.5px solid #5e5e5e;
+      border-radius: 20px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .listMusics {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      width: 640px;
+    }
+    .music {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      height: 80px;
+      padding: 10px;
+      width: 320px;
+      position: relative;
+      border-radius: 4px;
+      .musicPopup {
+        position: absolute;
+        z-index: 999;
+        top: -80px;
+        right: -275px;
+        width: 280px;
+        height: 352px;
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      @media screen and (max-width: 1024px) {
+        &:nth-child(n + 11) {
+          display: none;
+        }
+      }
+      &:hover {
+        background-color: #2f2739;
+      }
+
+      &:hover .more {
+        display: block;
+      }
+      &:hover .play {
+        display: block;
+      }
+
+      .more {
+        display: none;
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        border-radius: 50%;
+        &:hover {
+          cursor: pointer;
+          background-color: rgba($color: #fff, $alpha: 0.3);
+        }
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .play {
+        display: none;
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 6px;
+        background-color: rgba($color: #333, $alpha: 0.4);
+        &:hover {
+          cursor: pointer;
+        }
+        .icon {
+          width: 30px;
+          height: 30px;
+        }
+        i {
+          background-image: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/icon-playing.gif');
+          display: block;
+        }
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+      }
+
+      .descript {
+        padding-top: 6px;
+        .title {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 700;
+          &:hover {
+            color: #9b4de0;
+            cursor: pointer;
+          }
+        }
+        .artists {
+          display: flex;
+          flex-direction: row;
+          margin-left: 0px;
+          margin-top: 5px;
+          font-size: 13px;
+          font-weight: 600;
+          .artist {
+            color: #837f8a;
+            position: relative;
+            gap: 5px;
+            display: flex;
+            p {
+              margin-left: 3px;
+              &:hover {
+                cursor: pointer;
+                color: #c273ed;
+                text-decoration: underline;
+              }
+            }
+            span {
+              position: absolute;
+              top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .parners {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      margin-top: 40px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff80;
+      &:hover {
+        cursor: pointer;
+        color: #9b4de0;
+      }
+    }
+
+    .listParner {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 20px;
+
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 150px;
+        width: 780px;
+        margin-left: 80px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 560px;
+      }
+      div {
+        width: 100px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 1024px) {
+          width: 171px;
+          height: 96px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 122px;
+          height: 68px;
+        }
+        img {
+          max-width: 90%;
+          max-height: 80%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.AlbumHot,
+.Top100 {
+  .listBox {
+    h4 {
+      position: absolute;
+      top: 190px;
+      left: 5px;
+    }
+    .remixTitle {
+      position: absolute;
+      top: 205px;
+      margin-left: 10px !important;
+      @media screen and (max-width: 1024px) {
+        top: 215px !important;
+        left: -5px;
+      }
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 165px !important;
+        left: 6px;
+      }
+    }
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 110px;
+  left: 150px;
+  z-index: 999;
+  background-color: #34224f;
+  width: 250px !important;
+  height: 168px;
+  border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    top: 90px;
+    left: 110px;
+  }
+}
+
+.like {
+  filter: hue-rotate(270deg) !important;
+  color: #bd1919 !important;
+}
+.playing {
+  margin-top: 3px;
+  margin-left: 5px;
+  background: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/icon-playing.gif');
+  background-size: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+}

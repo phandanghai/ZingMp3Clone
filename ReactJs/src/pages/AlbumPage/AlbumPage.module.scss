@@ -1,0 +1,9 @@
+.AlbumPage {
+    position: relative;
+    top: 70px;
+    left: 240px;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}

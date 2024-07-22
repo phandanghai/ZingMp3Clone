@@ -1,0 +1,101 @@
+.SortInfoMusic {
+    width: 300px;
+    height: 100%;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 1024px) {
+        width: 835px;
+        height: 250px;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .image {
+        width: 300px;
+        height: 300px;
+        @media screen and (max-width: 1024px) {
+            width: 200px;
+            height: 200px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+    .info {
+        @media screen and (max-width: 1024px) {
+            width: 615px;
+            height: 200px;
+            padding-left: 20px;
+            margin-top: -25px;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        p {
+            color: #ffffff80;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 2px 0;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 162px;
+            height: 37px;
+            border-radius: 50px;
+            border: none;
+            background-color: #9b4de0;
+            padding: 8px 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width: 1024px) {
+                margin-top: 95px;
+            }
+            .icon {
+                margin-left: 10px;
+                -webkit-filter: invert(100%);
+            }
+            h4 {
+                margin-left: 10px;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        .action {
+            margin-top: 20px;
+            margin-left: 130px;
+            width: 200px;
+            position: absolute;
+            top: 470px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media screen and (max-width: 1024px) {
+                top: 170px;
+                left: 270px;
+            }
+            .love,
+            .more {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: #251f2d;
+                padding: 7.5px;
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    -webkit-filter: invert(0%);
+                }
+            }
+        }
+    }
+}

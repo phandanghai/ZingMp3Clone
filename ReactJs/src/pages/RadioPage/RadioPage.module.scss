@@ -1,0 +1,14 @@
+.RadioPage {
+    width: calc(100vw - 237px);
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 240px;
+    background-color: #170f23;
+    padding: 0 59px;
+    overflow: auto;
+    padding-bottom: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}

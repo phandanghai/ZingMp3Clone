@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 80px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222a35;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575c66;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #626970;
+}
+
+.rhap_container .rhap_progress-filled {
+  /* background-color: #868686; */
+  background-color: #fff;
+}
+
+.rhap_container .rhap_download-progress {
+  background-color: #868686;
+  /* background-color: #fff; */
+}
+.rhap_container {
+  background-color: transparent !important;
+  width: 700px;
+}
+
+.rhap_volume-bar,
+.rhap_container svg path {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff80;
+}
+
+.layout,
+.introduct {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.listMusicModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 330px;
+  height: calc(100vh - 80px);
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #66666680;
+}
+
+.newPlayListPopup {
+  position: absolute;
+  z-index: 999;
+  top: calc(60% - 10px);
+  left: calc(60% - 10px);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 300px;
+}
+
+.AccountPopup {
+  position: fixed;
+  position: fixed;
+  z-index: 999;
+  top: 70px;
+  right: 30px;
+  width: 220px;
+  height: 125px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.LoginPopup {
+  position: fixed;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #9b4de0;
+  color: #fff;
+}
