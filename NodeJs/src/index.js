@@ -7,8 +7,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:5173',
-    credentials: true,
+    origin: 'https://zing-mp3-clone-smoky.vercel.app',
+    withCredentials: true,
   }),
 );
 app.use(express.json({ limit: '50mb' }));
@@ -22,7 +22,6 @@ route(app);
 app.post('/', (req, res) => {
   res.status(200).json({
     message: 'Welcome to ZingMp3 API',
-    id: req.body.id,
   });
 });
 

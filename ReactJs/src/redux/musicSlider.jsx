@@ -4,7 +4,7 @@ const initaState = {
   playList: { id: null, index: null, data: [] },
   song: {
     id: null,
-    state: false,
+    state: true,
     show: true,
   },
   showModal: false,
